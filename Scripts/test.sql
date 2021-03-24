@@ -140,5 +140,25 @@ select * from vw_date_search;
 
 select sell_date, user_no, user_name, user_phone, p_code, sellqty, orderat from vw_date_search2;
 
+insert into sell values (17, '2020-05-30', '12001', 'PA', 3, null);
+
+select * from sell;
+
+delete from sell where sell_date = '2020-05-30';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

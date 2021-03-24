@@ -14,8 +14,17 @@ public class DateSearch {
 	}
 
 	public DateSearch(Sell sell_date) {
-		super();
 		this.sell_date = sell_date;
+	}
+	
+	
+	public DateSearch(User_Info user_no) {
+		this.user_no = user_no;
+	}
+
+	public DateSearch(User_Info user_no, User_Info user_name) {
+		this.user_no = user_no;
+		this.user_name = user_name;
 	}
 
 	public DateSearch(Sell sell_date, User_Info user_no, User_Info user_name, User_Info user_phone, Product p_code,
@@ -84,13 +93,10 @@ public class DateSearch {
 	public void setOrderat(Sell orderat) {
 		this.orderat = orderat;
 	}
-
+	
 	@Override
 	public String toString() {
-		return "DateSearch [sell_date=" + sell_date + ", user_no=" + user_no + ", user_name=" + user_name
-				+ ", user_phone=" + user_phone + ", p_code=" + p_code + ", sellqty=" + sellqty + ", orderat=" + orderat
-				+ "]";
+		return String.format("%s %s %s %s %s %s %s", sell_date, user_no, user_name, user_phone, p_code, sellqty, orderat);
 	}
-	
 	
 }

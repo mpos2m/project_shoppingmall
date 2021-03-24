@@ -53,7 +53,12 @@ public class DateSearchDaoImpl implements DateSearchDao {
 		Sell sellqty = new Sell(rs.getInt("주문수량"));
 		Sell orderat = new Sell(rs.getInt("판매액"));
 		
-		return new DateSearch(sell_date, user_no, user_name, user_phone, p_code, sellqty, orderat);
+	
+		
+		return new DateSearch(sell_date,user_no,user_name,user_phone,p_code,sellqty,orderat);
 	}
+
+
+	
 
 }
